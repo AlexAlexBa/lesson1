@@ -9,15 +9,13 @@ public class Guess {
         int maxAttempts = 10;
         System.out.println("Я загадал число от 1 до 99. У тебя " + maxAttempts + " попыток угадать.");
 
-        boolean isGuessed = false;
         try (Scanner scanner = new Scanner(System.in)) {
 
             for (int i = 0; i < 10; i++) {
                 maxAttempts--;
                 int n = scanner.nextInt();
                 if (n == number) {
-                    System.out.println("Ты угадал с " + (10 - maxAttempts) + " попытки");
-                    isGuessed = true;
+                    System.out.println("Ты угадал с " + (10 - maxAttempts++) + " попытки");
                     break;
                 } else if (n < number) {
                     System.out.println("Мое число больше. Осталось " + maxAttempts + " попыток");
@@ -27,7 +25,7 @@ public class Guess {
             }
         }
 
-        if (!isGuessed) {
+        if (maxAttempts == 0) {
             System.out.println("Ты не угадал.");
         }
     }
