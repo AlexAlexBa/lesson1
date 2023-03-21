@@ -9,5 +9,6 @@ public class OrgStructureTest {
 
         OrgStructureParser orgStructureParser = new OrgStructureParserImpl();
         Employee boss = orgStructureParser.parseStructure(file);
+        System.out.println(boss);
     }
 }

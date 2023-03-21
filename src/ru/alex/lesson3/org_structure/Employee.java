@@ -58,4 +58,9 @@ public class Employee {
     public void setSubordinate(List<Employee> subordinate) {
         this.subordinate = subordinate;
     }
+
+    @Override
+    public String toString() {
+        return position + " - " + name + "." + "     Подчиненные: " + subordinate;
+    }
 }
