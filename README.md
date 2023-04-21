@@ -110,9 +110,10 @@ ____
 ____
 
 ## lesson3
-
-1) Transliterator
-Реализовать интерфейс Transliterator  
+  
+  
+1) Transliterator  
+Реализовать интерфейс Transliterator    
 public interface Transliterator {  
 &emsp;String transliterate(String source);  
 }  
@@ -122,10 +123,11 @@ public interface Transliterator {
 верхнем регистре.
 ____
 
-2)DatedMap  
+2) DatedMap    
 DatedMap - это структура данных, очень похожая на Map, но содержащая
 дополнительную информацию: время добавления каждого ключа. При этом время
 хранится только для тех ключей, которые присутствуют в Map.  
+  
 Реализовать DatedMap путем реализации следующего интерфейса     
 public interface DatedMap {  
 &emsp;void put(String key, String value);  
@@ -135,6 +137,7 @@ public interface DatedMap {
 &emsp;Set<String> keySet();  
 &emsp;Date getKeyLastInsertionDate(String key);  
 }  
+  
 Методы:  
 put. Помещает в map пару ключ и значение. Как видно из описания метода, ключ и
 значение - это строки (семантика Map#put)  
@@ -151,5 +154,6 @@ getKeyLastInsertionDate. Получая на вход ключ, проверяе
 добавлено. Если нет - возвращает null  
 В реализации данного класса можно использовать уже готовые структуры данных в
 Java, такие как HashMap  
-   
+____ 
+
 3)
