@@ -96,11 +96,11 @@ public class RateLimitedPrinter {
 Пример использования. Задается вывод не чаще 1 раза в секунду, далее
 запускается цикл.  
 public static void main(String[] args) {  
-   RateLimitedPrinter rateLimitedPrinter = new RateLimitedPrinter(1000);  
-      for (int i = 0; i < 1_000_000_000; i++) {  
-      rateLimitedPrinter.print(String.valueOf(i));  
-   }  
-   long currentTime = System.currentTimeMillis(); // возвращает текущее  
-   // время  
+&emsp;   RateLimitedPrinter rateLimitedPrinter = new RateLimitedPrinter(1000);  
+&emsp;&emsp;      for (int i = 0; i < 1_000_000_000; i++) {  
+&emsp;&emsp;      rateLimitedPrinter.print(String.valueOf(i));  
+&emsp;   }  
+&emsp;   long currentTime = System.currentTimeMillis(); // возвращает текущее  
+&emsp;   // время  
 }  
 
