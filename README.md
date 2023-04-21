@@ -85,12 +85,12 @@ interval, переданного в конструктор - то происхо
 милисекунд. Реализовать описанный класс.  
 
 public class RateLimitedPrinter {  
-   public RateLimitedPrinter(int interval) {  
-      // code here  
-   }  
-   public void print(String message) {  
-      // code here  
-   }  
+&emsp;   public RateLimitedPrinter(int interval) {  
+&emsp;&emsp;      // code here  
+&emsp;   }  
+&emsp;   public void print(String message) {  
+&emsp;&emsp;      // code here  
+&emsp;   }  
 }
   
 Пример использования. Задается вывод не чаще 1 раза в секунду, далее
